@@ -38,3 +38,28 @@ set background=dark
 Finally, execute `wal --theme base16-nord`.
 
 Something not working as expected? Feel free to open an issue!
+
+## Integrating with vim-snippets
+
+There is an interesting plugin called vim-snippets which adds some snippets for
+popular languages [Vim-Snippets](https://github.com/honza/vim-snippets). However it is not as completed as the shown by the
+development made by Gilles Castel. So for people who are interested on using
+this and also the vim-snippets plugin there is a specific setup which only
+enables using latex-snippets for Tex files.
+
+You should add the following line in a tex.vim file located in the ftplugin
+folder usually at `~/.vim/after/ftplugin`
+```bash
+let g:UltiSnipsSnippetDirectories=["custom-snippets"]
+```
+
+This only enables snippets from custom-snippets folder in runtimepath.
+
+Then create the folder `custom-snippets` in the `~/.vim/after` location, and
+add the `tex.snippets` file provided here.
+
+If you haven't added the vim-snippets plugin only add the file in the `UltiSnips` folder as normal.
+
+If you are interested in how I set this repository in conjunction with other
+plugins for software development please check my repository at [Nvim-config](https://github.com/LuighiV/nvim-config).
+
