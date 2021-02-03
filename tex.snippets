@@ -410,6 +410,16 @@ snippet nn "Tikz node" w
 $0
 endsnippet
 
+snippet node "Tikz node in path" w
+node[$3] (${1/[^0-9a-zA-Z]//g}${2}) {${1}}
+$0
+endsnippet
+
+snippet path "Tikz path command" w
+\path[$5] (${1:0,0}) ${3:to [${4:short}] } ++(${2:1,0})
+$0
+endsnippet
+
 context "math()"
 snippet mcal "mathcal" iA
 \mathcal{$1}$0
@@ -637,8 +647,9 @@ snippet HH "H" iA
 \mathbb{H}
 endsnippet
 
-snippet DD "D" iA
-\mathbb{D}
-endsnippet
+# Conflicts with DD in voltages references
+#snippet DD "D" iA
+#\mathbb{D}
+#endsnippet
 
 # vim:ft=snippets

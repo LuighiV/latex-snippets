@@ -63,3 +63,5 @@ If you haven't added the vim-snippets plugin only add the file in the `UltiSnips
 If you are interested in how I set this repository in conjunction with other
 plugins for software development please check my repository at [Nvim-config](https://github.com/LuighiV/nvim-config).
 
+An interesting contribution made by Gilles Castel which adds more snippets which are
+not considered in this version is located at [Gilles-Castel-gist](https://gist.github.com/gillescastel/8da990dbc83c1c86f8ca048bc83624f0).
